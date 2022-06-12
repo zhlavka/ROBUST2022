@@ -12,6 +12,6 @@ rf.all = randomForest(lettr ~ ., train, ntree = 500, norm.votes = FALSE)
 pred = predict(rf.all, test)
 
 correct = sum(pred == test$lettr)
-cat("Proportion correct:", correct/(n_test), "\n")
+cat("Proportion Correct:", correct/(n_test), "\n")
 
 
